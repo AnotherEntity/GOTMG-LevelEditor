@@ -1,0 +1,31 @@
+
+
+html {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    color: rgb(69, 62, 75);
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 96%;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+p{
+  background-color:#eeeeee;
+}

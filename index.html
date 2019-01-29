@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<!--This is editor is built off of https://github.com/Syknapse/Pixel-art-maker-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOTMG Level Editor</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="convert.js"></script>
+</head>
+<body>
+    <div class="controls">
+        <button type="button" id="reset">Reset</button>
+        <label class="builder"><div>Row</div>
+            <button type="button" id="remove-row" value="10">-</button>
+            <button type="button" id="add-row" value="10">+</button>
+            <input type="number" id="input-rows" name="height" min="1" max="150" value="10">
+        </label>
+
+        <label class="builder"><div>Column</div>
+            <button type="button" id="remove-column" value="10">-</button>
+            <button type="button" id="add-column" value="10">+</button>
+            <input type="number" id="input-columns" name="width" min="1" max="150" value="10">
+        </label>
+
+        <div class="builder">
+            <button type="button" id="clear-grid">Clear Grid</button>
+            <button type="button" id="create-grid">Create Grid</button>
+        </div>
+        <div>
+          <button onclick="convert()">Export to JSON</button>
+          <p id="output-json"></p>
+        </div>
+
+        <input type="color" id="color-picker">
+    </div>
+
+    <table id="pixel-canvas"></table>
+    <script src="syknapse.js"></script>
+</body>
+</html>
